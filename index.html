@@ -183,7 +183,7 @@ form .button-area{
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Form | CodingNepal</title>
+  <title>Contact Form | WW Facts</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
@@ -192,6 +192,13 @@ form .button-area{
   <div class="wrapper">
     <header>Send us a Message</header>
     <form action="https://formsubmit.co/managerwwfacts@gmail.com" method="POST">
+      <!-- Honeypot -->
+      <input type="text" name="_Honey" style="display: none;">
+      <!-- Disable Captcha -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://7515700.github.io/Final/success.html">
+
+
       <div class="dbl-field">
         <div class="field">
           <input type="text" name="name" placeholder="Enter your name" required>
